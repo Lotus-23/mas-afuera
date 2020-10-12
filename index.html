@@ -31,56 +31,113 @@
         </div>
       </nav>
     </div>  
+    <!-- X Barra de Navegacion -->
+
     <!-- O Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>Más Afuera</h1>
-            <h3>Pesca sustentable a la puerta de tu casa</h3>
-            <p>Recibe toda la información de los mejores productos</p>
+    <div class="container">
+        <h1>Más Afuera</h1>
+        <h3>Pesca sustentable a la puerta de tu casa</h3>
+        <p>Recibe toda la información de los mejores productos</p>
 
-            <form>
-                <div class="form-group row">
-                    <div class="col-2">
-                        <label for="exampleInputEmail1">Correo Electrónico</label>
-                    </div>
-                    <div class="col-4">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="hola@ejemplo.cl">
-                    </div>                 
+        <form>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="exampleInputEmail1">Correo Electrónico</label>
                 </div>
+                <div class="col-4">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="hola@ejemplo.cl">
+                </div>                 
+            </div>
 
-                <div class="form-group row">
-                    <div class="col-2">
-                        <label for="exampleInputWhatsapp1">Whatsapp</label>
-                    </div>
-                    <div class="col-1">+56</div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="exampleInputWhatsapp1">Whatsapp</label>
+                </div>
+                <div class="col-1">+56</div>
                     <div class="col-3">
                         <input type="tel" class="form-control" id="exampleInputWhatsapp1" aria-describedby="whatsappHelp" placeholder="987654321">
                     </div>
                 </div>
 
-                <div class="form-group row">
-                    <div class="col-2">
-                        <label for="exampleFormControlSelect1">Ubicación</label>
-                    </div>
-                    <div class="col-4">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Región Metropolitana</option>                                <option>Región de Valparaíso</option>
-                        </select>
-                    </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="exampleFormControlSelect1">Ubicación</label>
                 </div>
+                <div class="col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Región Metropolitana</option>
+                        <option>Región de Valparaíso</option>
+                    </select>
+                </div>
+            </div>
 
-                <small id="whatsappHelp" class="form-text text-muted">Nunca compartiremos tus datos con terceros.</small>
+            <small id="whatsappHelp" class="form-text text-muted">Nunca compartiremos tus datos con terceros.</small>
 
-                <br>
+            <br>
 
-                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
 
-            </form>
-        </div>
-    </section>
+        </form>
+    </div>
     <!-- X Hero Section -->
           
     <!-- O Productos -->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="false">
+                    <img src="img/vidriola.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vidriola</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-interval="false">
+                    <img src="img/breca.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Breca</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-interval="false">
+                    <img src="img/corvina.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Corvina</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-interval="false">
+                    <img src="img/pulpo.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pulpo</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-interval="false">
+                    <img src="img/langosta.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Langosta</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
     <!-- X Productos -->
 
     <!-- O Archipielago -->
@@ -90,9 +147,8 @@
     <!-- O Footer -->
     <!-- X Footer -->
 
-        </div>
-      </nav>
-    <!-- X Barra de Navegacion -->
+        
+
 
 
 
