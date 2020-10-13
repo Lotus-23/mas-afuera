@@ -11,30 +11,36 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/style.css">
     <title>MásAfuera - Pesca Sustentable</title>
+
+    <!-- Script Fontawesome -->
+    <script src="https://kit.fontawesome.com/3c8cf51b81.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- O Barra de Navegacion -->
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#">MásAfuera</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Pesca Sustentable <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Archipielago</a>
-            <a class="nav-link" href="#">Equipo</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog (próximamente)</a>
-            <a class="nav-link m-l-auto" href="#">Carrito</a>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;" id="nav">
+            <a class="navbar-brand" href="#nav">MásAfuera</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#productos">Pesca Sustentable <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Archipielago</a>
+                    <a class="nav-link" href="#">Equipo</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog (próximamente)</a>
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
     </div>  
     <!-- X Barra de Navegacion -->
 
     <!-- O Hero -->
     <div class="container">
+        <br>
+        <br>
+        <br>
         <h1>Más Afuera</h1>
         <h3>Pesca sustentable a la puerta de tu casa</h3>
         <p>Recibe toda la información de los mejores productos</p>
@@ -82,61 +88,212 @@
     <!-- X Hero Section -->
           
     <!-- O Productos -->
-    <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="false">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="false">
-                    <img src="img/vidriola.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Vidriola</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <div class="container" id="productos">
+        <div class="row">
+            <div class="col-6">
+                <h1>Pesca Sustentable</h1>
+                <br>
+                <p>Pesca en modalidad artesanal velando por la presenvacion del ecosistema endémico del archipielago</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <img src="img/vidriola.jpg" class="card-img" alt="...">
+                    <p>$8.500 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>    
                     </div>
-                </div>
-                <div class="carousel-item"  data-interval="false">
-                    <img src="img/breca.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Breca</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                </div>
-                <div class="carousel-item"  data-interval="false">
-                    <img src="img/corvina.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Corvina</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Vidriola</h5>
+                        <p class="card-text">Pescado endémico Chileno, el cual navega desde el Archipielago Juan Fernandez a Isla de Pascua. Su nombre «Vidriola» se origina por el reflejo que provocan sus escamas al saltar en el mar.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
-                </div>
-                <div class="carousel-item"  data-interval="false">
-                    <img src="img/pulpo.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pulpo</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                </div>
-                <div class="carousel-item"  data-interval="false">
-                    <img src="img/langosta.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Langosta</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+            <div class="col-1"></div>   
+                   
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <img src="img/breca.jpg" class="card-img" alt="...">
+                    <p>$9.000 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>    
+                    </div>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Breca</h5>
+                        <p class="card-text">La reca es un recurso endémico Chileno, único en el mundo. Habita lugares costeros rocosos hasta los 180 metros de profundidad. Posee una carne blanca y magra, perfecta para ceviche o sashimi.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        
+        <div class="row">
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/corvina.jpg" class="card-img" alt="...">
+                    <p>$8.500 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>   
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Corvina</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-1"></div>
+
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/pulpo.png" class="card-img" alt="...">
+                    <p>$7.500 / 250 gr</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>   
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Pulpo</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="row">
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/langosta.jpg" class="card-img" alt="...">
+                    <p>$20.000 / unidad</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>    
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Langosta</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/colorado.jpg" class="card-img" alt="...">
+                    <p>$10.000 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>    
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Colorado</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/bacalao.jpg" class="card-img" alt="...">
+                    <p>$15.000 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>    
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Bacalao</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="card mb-3 col-5 border border-primary" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="img/lenguado.jpg" class="card-img" alt="...">
+                    <p>$15.000 / kg</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>    
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenguado</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+                
+                    
+       
     </div>
     <!-- X Productos -->
 
